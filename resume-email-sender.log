@@ -1,0 +1,249 @@
+2025-12-27 09:38:36 [restartedMain] INFO  c.c.R.ResumeEmailSenderApplication - Starting ResumeEmailSenderApplication using Java 17.0.5 with PID 15088 (C:\Users\chand\Desktop\JavaDev\Automatic-Email-Sender-Hr\target\classes started by chand in C:\Users\chand\Desktop\JavaDev\Automatic-Email-Sender-Hr)
+2025-12-27 09:38:36 [restartedMain] INFO  c.c.R.ResumeEmailSenderApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-27 09:38:36 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-27 09:38:36 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-27 09:38:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-27 09:38:37 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-27 09:38:37 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-12-27 09:38:37 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-27 09:38:37 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1785 ms
+2025-12-27 09:38:38 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2025-12-27 09:38:38 [restartedMain] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2025-12-27 09:38:38 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2025-12-27 09:38:38 [restartedMain] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2025-12-27 09:38:38 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2025-12-27 09:38:38 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2025-12-27 09:38:38 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2025-12-27 09:38:38 [restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7754c1f5
+2025-12-27 09:38:38 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-27 09:38:38 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-27 09:38:39 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-27 09:38:39 [restartedMain] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2025-12-27 09:38:39 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2025-12-27 09:38:39 [restartedMain] INFO  c.c.R.ResumeEmailSenderApplication - Started ResumeEmailSenderApplication in 3.532 seconds (process running for 3.898)
+2025-12-27 09:38:39 [scheduling-1] INFO  c.c.R.service.ExcelReaderService - Reading HR details from Excel: C:\Users\chand\Desktop\JavaDev\Automatic-Email-Sender-Hr\src\main\resources\Companies_Part1_200.xlsx
+2025-12-27 09:38:39 [scheduling-1] INFO  c.c.R.service.ExcelReaderService - Total Valid HR Records: 200
+2025-12-27 09:38:39 [scheduling-1] INFO  c.c.R.s.EmailSchedulerService - Loaded 200 HR entries
+2025-12-27 09:38:46 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sponnusamy@aequor.com
+2025-12-27 09:38:58 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to ravi.mourya@waisl.in
+2025-12-27 09:39:09 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to fbegum@hitachi-solutions.com
+2025-12-27 09:39:19 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to prerna.kohli@cyware.com
+2025-12-27 09:39:30 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sharvari.lingayat@milessoft.com
+2025-12-27 09:39:41 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to shalaka.kothawale@bizom.com
+2025-12-27 09:39:52 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to chirag.shah@iflair.com
+2025-12-27 09:40:02 [scheduling-1] ERROR c.c.R.s.EmailSchedulerService - Failed to send email: Mail server connection failed. Failed messages: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout 5000;
+  nested exception is:
+	java.net.SocketTimeoutException: Connect timed out
+2025-12-27 09:40:14 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to madhan.kumar@aditiconsulting.com
+2025-12-27 09:40:25 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to monica.bajaj@soft-corner.com
+2025-12-27 09:40:36 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sputta@aztecsoftware.com
+2025-12-27 09:40:46 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to praveen@maxval.com
+2025-12-27 09:40:57 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to dilip.s@theimperative.in
+2025-12-27 09:41:08 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to ritu.malhotra@zemosolabs.com
+2025-12-27 09:41:19 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to jayaprakash@mirafra.com
+2025-12-27 09:41:30 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to mamtha.akula@netradyne.com
+2025-12-27 09:41:41 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to mujeeb@panzertechnologies.net
+2025-12-27 09:41:52 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to pooja.m@aress.com
+2025-12-27 09:42:02 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to shagun.bhunchal@magicedtech.com
+2025-12-27 09:42:13 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to yashpal.yadav@dynproindia.com
+2025-12-27 09:42:24 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to priyanka.grover@fifthnote.co
+2025-12-27 09:42:35 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to monica@pingasolutions.com
+2025-12-27 09:42:46 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to jimeet@metamorphtech.com
+2025-12-27 09:42:57 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to prashant@kljindia.com
+2025-12-27 09:43:10 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to meena@airmeet.com
+2025-12-27 09:43:21 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to rkohli@tata.com
+2025-12-27 09:43:32 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to rsen@medline.com
+2025-12-27 09:43:43 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to nandini.tandon@indusface.com
+2025-12-27 09:43:55 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to malini.venugopal@people10.com
+2025-12-27 09:44:06 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to neha@multiqos.com
+2025-12-27 09:44:17 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to hemant.pawar@ndsglobal.com
+2025-12-27 09:44:28 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sanjeev.verma@sttelemediagdc.in
+2025-12-27 09:44:39 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to poulo@goleadingit.com
+2025-12-27 09:44:50 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to susheelk@ironsystems.com
+2025-12-27 09:45:01 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to ralbro@stand8.io
+2025-12-27 09:45:11 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to ujjwaal.d@valentabpo.com
+2025-12-27 09:45:22 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to rana.bose@emds.com
+2025-12-27 09:45:33 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to shilpam@codeforce.com
+2025-12-27 09:45:47 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to muthyala.manasa@absyz.com
+2025-12-27 09:45:58 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to gyan@centroxy.com
+2025-12-27 09:46:09 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to ranjani.sunkara@incture.com
+2025-12-27 09:46:21 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to meghnam@smartek21.com
+2025-12-27 09:46:34 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to ddevapathni@gemini-us.com
+2025-12-27 09:46:45 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to rohit@mindpooltech.com
+2025-12-27 09:46:57 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to rohini.rai@taazaa.com
+2025-12-27 09:47:08 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to harikishore.p@excelra.com
+2025-12-27 09:47:19 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to phanidhars@dextara.com
+2025-12-27 09:47:30 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to manuel.fernandes@antheliohealth.com
+2025-12-27 09:47:41 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to aravind.warrier@rapidvaluesolutions.com
+2025-12-27 09:47:51 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sbidwai@saltside.se
+2025-12-27 09:48:03 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vijay.gupta@rahisystems.com
+2025-12-27 09:48:14 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to manda.kishore@evolutyz.com
+2025-12-27 09:48:25 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to yashika@mawaimail.com
+2025-12-27 09:48:36 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to chaitanya.arikati@abjayon.com
+2025-12-27 09:48:47 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to anita@appventurez.com
+2025-12-27 09:48:58 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to tanvi.mittal@vlinkinfo.com
+2025-12-27 09:49:09 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to yasar.j@techmango.net
+2025-12-27 09:49:20 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vijayakrishna.t@lera.us
+2025-12-27 09:49:31 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to nikita@goleadingit.com
+2025-12-27 09:49:41 [scheduling-1] ERROR c.c.R.s.EmailSchedulerService - Failed to send email: Mail server connection failed. Failed messages: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout 5000;
+  nested exception is:
+	java.net.SocketTimeoutException: Connect timed out
+2025-12-27 09:49:52 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to tess.burlow@symbiosystech.com
+2025-12-27 09:50:03 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to amrita.singh@cogentinfo.com
+2025-12-27 09:50:14 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sshukla@tanishasystems.com
+2025-12-27 09:50:38 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to priyankam@chimeratechnologies.com
+2025-12-27 09:50:51 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to johnsonk@netrovert.net
+2025-12-27 09:51:02 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to chandan.kashyap@mysenseinc.com
+2025-12-27 09:51:13 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to maanoj@betterplace.co.in
+2025-12-27 09:51:23 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to srivathsan.mg@kumaran.com
+2025-12-27 09:51:34 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to svaze@montran.com
+2025-12-27 09:51:45 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to archana.kp@kilowott.com
+2025-12-27 09:51:56 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to joel.lobo@rtcamp.com
+2025-12-27 09:52:06 [scheduling-1] ERROR c.c.R.s.EmailSchedulerService - Failed to send email: Mail server connection failed. Failed messages: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout 5000;
+  nested exception is:
+	java.net.SocketTimeoutException: Connect timed out
+2025-12-27 09:52:17 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to jagadabhi.krishna@leoforce.com
+2025-12-27 09:52:28 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to devershi.desai@ssminfotech.com
+2025-12-27 09:52:39 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to bkaklotar@diabsolut.com
+2025-12-27 09:52:50 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to kunal.wadhwani@pocketfm.com
+2025-12-27 09:53:01 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vidhya.sam@superops.ai
+2025-12-27 09:53:13 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to meenakshi.banerjee@crmnext.in
+2025-12-27 09:53:24 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to karthik.chintapatla@visteon.com
+2025-12-27 09:53:36 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to barkha@wobot.ai
+2025-12-27 09:53:47 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to kavita.yadav@valiancesolutions.com
+2025-12-27 09:53:58 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to gayatri.nikkula@inry.com
+2025-12-27 09:54:09 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to supriya.a@ecolabdigitalcenter.in
+2025-12-27 09:54:20 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to ruchi.batra@beetel.in
+2025-12-27 09:54:31 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vinay.s@manthan.com
+2025-12-27 09:54:42 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to n.siddharth@urbanpiper.com
+2025-12-27 09:54:53 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to shashwat.mittra@urbanladder.com
+2025-12-27 09:55:04 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to roshni.s@apty.io
+2025-12-27 09:55:15 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to shalu.chinai@indianic.com
+2025-12-27 09:55:27 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to krishan_kumar@taaltech.com
+2025-12-27 09:55:38 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sureshkumar.tedlapu@criticalriver.com
+2025-12-27 09:55:49 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to suhasinir@amzetta.com
+2025-12-27 09:56:00 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to hari.p@westagilelabs.com
+2025-12-27 09:56:12 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sarath.v@insemitech.com
+2025-12-27 09:56:23 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to mhussain@trimaxamericas.com
+2025-12-27 09:56:34 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to naveen@primusglobal.com
+2025-12-27 09:56:45 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to nikhil.jangir@saviance.com
+2025-12-27 09:56:55 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to priya.bagla@fullestop.com
+2025-12-27 09:57:06 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to harikrishna.bachala@mitsind.com
+2025-12-27 09:57:19 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to deep.patel@ics-global.in
+2025-12-27 09:57:30 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to reenaa.s@63moons.com
+2025-12-27 09:57:41 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to ruchi.mago@orange.com
+2025-12-27 09:57:53 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sagorika.s@insync.co.in
+2025-12-27 09:58:04 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to cbhattacharya@inventive-it.com
+2025-12-27 09:58:14 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to joshua.henry@cloudsek.com
+2025-12-27 09:58:25 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sharad.srivastava@blumeglobal.com
+2025-12-27 09:58:36 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sreeja.sreedharan@skuad.io
+2025-12-27 09:58:47 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to saroj.tripathy@muvi.com
+2025-12-27 09:58:58 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to pravin.subba@tanla.com
+2025-12-27 09:59:11 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to eswari.v@tringapps.com
+2025-12-27 09:59:22 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to eram.qudsia@mygate.in
+2025-12-27 09:59:33 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to dgokhale@crgroup.co.in
+2025-12-27 09:59:45 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vishwanath.belliappa@codecraft.co.in
+2025-12-27 09:59:56 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to khandoba.k@techtreeit.com
+2025-12-27 10:00:08 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sharon@srinsofttech.com
+2025-12-27 10:00:18 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sarita@nasscom.in
+2025-12-27 10:00:31 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to rehana.inamdar@smarteinc.com
+2025-12-27 10:00:42 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to kavya.k@mygoconsulting.com
+2025-12-27 10:00:54 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to mohammed.rizwan@reverieinc.com
+2025-12-27 10:01:04 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to dhritiparnad@zendrive.com
+2025-12-27 10:01:15 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to anjali.patil@workindia.in
+2025-12-27 10:01:27 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to mrugesh.raval@nascentinfo.com
+2025-12-27 10:01:38 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to shamna.libu@naicoits.com
+2025-12-27 10:01:49 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vinny@tops-int.com
+2025-12-27 10:02:00 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to neetu.choudhary@idsnext.com
+2025-12-27 10:02:11 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to hariprasadadthale@askbrake.com
+2025-12-27 10:02:21 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to ltirounavoucarassou@yodlee.com
+2025-12-27 10:02:32 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vikass@interrait.com
+2025-12-27 10:02:44 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to roshni.j@netenrich.com
+2025-12-27 10:02:55 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to manju@nichi.com
+2025-12-27 10:03:06 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to ruchi@prodexnet.com
+2025-12-27 10:03:16 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to rsingh@issquaredinc.com
+2025-12-27 10:03:28 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to robin@burgeonits.net
+2025-12-27 10:03:39 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to maclean.raphael@wepindia.com
+2025-12-27 10:03:51 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to subrina@flobiz.in
+2025-12-27 10:04:02 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to amitesh.verma@cheersin.com
+2025-12-27 10:04:14 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to smita.narkar@infinite-uptime.com
+2025-12-27 10:04:25 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to anoronha@shorewise.com
+2025-12-27 10:04:36 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to lipika.mohanty@crmnext.com
+2025-12-27 10:04:46 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sophronia@reshamandi.com
+2025-12-27 10:04:58 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to poornima.s@d4insight.com
+2025-12-27 10:05:10 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to jobs@skyonn.com
+2025-12-27 10:05:22 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to tanvi.salpekar@maantic.com
+2025-12-27 10:05:35 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sachin.girolla@triarqhealth.com
+2025-12-27 10:05:45 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to jayashree.jayanth@ushur.com
+2025-12-27 10:05:58 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to rajneesh.malik@mindtickle.com
+2025-12-27 10:06:10 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to saumya.singh@akalinfosys.com
+2025-12-27 10:06:21 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vikas.kumar@altudo.co
+2025-12-27 10:06:31 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sindhuja.parthasarathy@mindtickle.com
+2025-12-27 10:06:42 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sujathag@celcomsolutions.com
+2025-12-27 10:06:53 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to deepali@proximity.tech
+2025-12-27 10:07:04 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to udaykumar@cadmaxx.com
+2025-12-27 10:07:15 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to gsomisetti@email.xtglobal.com
+2025-12-27 10:07:26 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vithika@optimizeitsystems.com
+2025-12-27 10:07:37 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to pavithra.bopanna@entropiktech.com
+2025-12-27 10:07:48 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to madhuri@gupshup.io
+2025-12-27 10:07:59 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to archana.shinde@cognologix.com
+2025-12-27 10:08:11 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to karthikeyan.sivasubramanian@saviynt.com
+2025-12-27 10:08:23 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sandipb@prdxn.com
+2025-12-27 10:08:34 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to reshma.mohan@gemini-us.com
+2025-12-27 10:08:45 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vijay.t@ipsoft.com
+2025-12-27 10:08:56 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to reena@matellio.com
+2025-12-27 10:09:07 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sunithas@affluentgs.com
+2025-12-27 10:09:18 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vikrant@weblineindia.com
+2025-12-27 10:09:29 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to dinesh.hemdev@logixal.com
+2025-12-27 10:09:40 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to rakesh.kumar@anetcorp.com
+2025-12-27 10:09:51 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to pardeepp@damcogroup.com
+2025-12-27 10:10:02 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to husahu@ciphercloud.com
+2025-12-27 10:10:13 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to b.chintan@introlligent.com
+2025-12-27 10:10:24 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to pooja@agri10x.com
+2025-12-27 10:10:35 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to brij@claritusconsulting.com
+2025-12-27 10:10:46 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to khushi@5ire.org
+2025-12-27 10:10:58 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to m.patel@easternenterprise.com
+2025-12-27 10:11:09 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to amritesh.shukla@mygate.com
+2025-12-27 10:11:20 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sheena.malhotra@netsmartz.com
+2025-12-27 10:11:31 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to mchakraborty@phdata.io
+2025-12-27 10:11:42 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vijayar@sightspectrum.com
+2025-12-27 10:11:53 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to arun.kumar@bobtechsolutions.com
+2025-12-27 10:12:04 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vijay.arcot@ymedialabs.com
+2025-12-27 10:12:15 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to harshada.moharil@freshgravity.com
+2025-12-27 10:12:26 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to samidha.varadkar@63moons.com
+2025-12-27 10:12:37 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to supriya.lulla@doyen.co.in
+2025-12-27 10:12:48 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to anil.chandra@thoughtspot.com
+2025-12-27 10:12:58 [scheduling-1] ERROR c.c.R.s.EmailSchedulerService - Failed to send email: Mail server connection failed. Failed messages: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout 5000;
+  nested exception is:
+	java.net.SocketTimeoutException: Connect timed out
+2025-12-27 10:13:09 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to bikram.dash@tatwa.info
+2025-12-27 10:13:20 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to shoaib.shah@blazeclan.com
+2025-12-27 10:13:32 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to cverma@fcsltd.com
+2025-12-27 10:13:43 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to gitanjali.verma@w3villa.com
+2025-12-27 10:13:54 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to sumukhi.jairam@nttdata.com
+2025-12-27 10:14:05 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to livin.varghese@teqfocus.com
+2025-12-27 10:14:16 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to shambhavi.sharma@nexval.com
+2025-12-27 10:14:27 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to gayatrip@gathi.com
+2025-12-27 10:14:38 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to saraswathi@vasudhaika.net
+2025-12-27 10:14:49 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vaidhyanathan@infinitysts.com
+2025-12-27 10:14:59 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to divyajaggi@promactinfo.com
+2025-12-27 10:15:10 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to priya@congruentindia.com
+2025-12-27 10:15:21 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to vipin.sharma@vtnetzwelt.com
+2025-12-27 10:15:32 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to shamita.nandi@mjunction.in
+2025-12-27 10:15:43 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to ankita@zenwork.com
+2025-12-27 10:15:54 [scheduling-1] INFO  c.c.R.service.EmailService - ? Email sent to anirudhan.vasudevan@replicon.com
+2025-12-27 10:15:59 [scheduling-1] INFO  c.c.R.s.EmailSchedulerService - All emails processed.
+2025-12-27 10:16:02 [Thread-7] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2025-12-27 10:16:02 [Thread-7] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-27 10:16:02 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-27 10:16:02 [Thread-7] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2025-12-27 10:16:02 [Thread-7] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2025-12-27 10:16:02 [Thread-7] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2025-12-27 10:16:02 [Thread-7] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
